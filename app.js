@@ -4,10 +4,10 @@ const ParseDashboard = require('parse-dashboard');
 const config = {
     apps: [
         {
-            "serverURL": "https://obscure-gorge-33669.herokuapp.com/parse",
-            "appId": "ATlQvhxRMC41YMx3XRhuQRuN2A9RnFR9BFC2EMyn",
-            "masterKey": "qDSRVrmOq5OrrbdpRcMqLRL0xun1ObKL4d5WTtS8",
-            "appName": "ClassNav (Deprecated)"
+            "serverURL": process.env.serverURL || 'http://localhost:5000/parse',
+            "appId": "00100100",
+            "masterKey": "55ba92cc-f659-4a2b-adb4-ae2168447a28",
+            "appName": "Dime Dashboard"
         }
     ],
     users: [{
