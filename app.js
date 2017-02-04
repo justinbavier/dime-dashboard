@@ -5,8 +5,8 @@ const config = {
     apps: [
         {
             "serverURL": process.env.serverURL || 'http://localhost:5000/parse',
-            "appId": "00100100",
-            "masterKey": "55ba92cc-f659-4a2b-adb4-ae2168447a28",
+            "appId": process.env.APP_ID || 'myAppId',
+            "masterKey": process.env.MASTER_KEY || 'masterKey',
             "appName": "Dime Dashboard",
             "production": true
         }
