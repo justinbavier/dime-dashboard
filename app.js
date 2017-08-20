@@ -1,14 +1,16 @@
 const express = require('express');
 const ParseDashboard = require('parse-dashboard');
+require('dotenv').config()
+
 
 const config = {
     apps: [
         {
-            "serverURL": process.env.serverURL || 'http://localhost:5000/parse',
-            "appId": process.env.APP_ID || 'myAppId',
-            "masterKey": process.env.MASTER_KEY || 'masterKey',
+            "serverURL": process.env.SERVER_URL,
+            "appId": process.env.APP_ID,
+            "masterKey": process.env.MASTER_KEY,
             "appName": "Dime Dashboard",
-            "production": true
+            "production": process.env.PRODUCTION
         }
     ],
     users: [{

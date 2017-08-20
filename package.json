@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is express app that hosts a parse dashboard",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.13.4",
     "parse-dashboard": "^1.0.23"
   },
