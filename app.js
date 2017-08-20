@@ -1,6 +1,6 @@
 const express = require('express');
 const ParseDashboard = require('parse-dashboard');
-require('dotenv').config()
+require('dotenv').config();
 
 
 const config = {
